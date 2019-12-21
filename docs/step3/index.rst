@@ -12,9 +12,30 @@ Tasks:
 	- we need to ensure we use the "role" we just created previously
 	- we also need to create "test cases" for it to use as input when we go and test the function to ensure it is running correctly
 
+.. code-block:: python
+
+	#!/usr/bin/env python3
+
+	# Created by: Mr. Coxall
+	# Created on: Jan 2020
+	# This function is the Hello, World! Lambda function
+
+	import json
+
+	def lambda_handler(event, context):
+	    # TODO implement
+	    
+	    return_var = {
+	        'statusCode': 200,
+	        'body': json.dumps('Hello, ' + event['name'])
+	    }
+	    
+	    return return_var
+
+
 .. raw:: html
 
   <div style="text-align: center; margin-bottom: 2em;">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/i3J2ZBBB7wM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/IBfbIfa1YFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 	</iframe>
   </div>
