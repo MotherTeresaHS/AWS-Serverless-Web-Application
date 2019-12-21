@@ -15,6 +15,7 @@ In this project we will be making an AWS Serverless Web App. We will be using an
   :titlesonly:
 
   self
+  step0/index
   step1/index
   step2/index
   step3/index
