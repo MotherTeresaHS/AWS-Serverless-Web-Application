@@ -4,14 +4,14 @@
 Amplify
 *******
 
-We will be using AWS Amplify to host our web app, so that it is always available and we do not need to worry about provisioning servers, autoscalling instances or anthing else about mamaging web content. We will also be using Cloud9 as our IDE to write our HTML in and then publishing all the code to GitHub as our version control system.
+We will use AWS Amplify to host our web app so it is always available and we do not need to worry about provisioning servers, auto-scaling instances or anything else about managing web content. We will also use AWS Cloud9 as our IDE to write our HTML in and then publish all the code to GitHub as our version control system.
 
 Tasks:
 
 - create GitHub repo
-- create Cloud9 instantce
-- connect root of Cloud9 instance to GitHub repo
-- create index.html file in root of Cloud9
+- create Cloud9 instance
+- connect the root of Cloud9 instance to GitHub repo
+- create index.html file in the root of Cloud9
 - update GitHub repo
 - create Amplify instance connected to GitHub repo 
 

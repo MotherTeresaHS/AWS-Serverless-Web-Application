@@ -4,13 +4,13 @@
 IAM
 ****
 
-Before we do any more work with AWS, the next thing we need is to create some permissions so that we can give access to certain AWS services by other services. For example eventually we will want some code (Lambda function) to access the database. Unless we create permissions to let this happen, hopefully the database will not just let anyone access it!
+Before we do any more work with AWS, the next thing we need is to create some permissions so we can give access to certain AWS services by other services. For example, eventually, we will want some code (Lambda function) to access the database. Unless we create permissions to let this happen, hopefully, the database will not just let anyone access it!
 
-To do this we will be using AWS IAM (Identity and Access Management). We will create a "role" that will give Lambda functions permissions to access DynamoDB, the database we will be using.
+To do this, we will use AWS IAM (Identity and Access Management). We will create a "role" that will give Lambda functions permissions to access DynamoDB, the database we will be using.
 
 Tasks:
 
-- create role in IAM, for Lambda's to access DynamoDB
+- create a role in IAM, for Lambda to access DynamoDB
 
 .. raw:: html
 

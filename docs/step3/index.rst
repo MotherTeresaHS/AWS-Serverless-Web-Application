@@ -4,13 +4,13 @@
 Lambda Function
 ***************
 
-We will be using AWS Lambda to run our back end code. The language we will be using is Python, although other languages are available. Once again the advantage of running the code in AWS Lambda is that we do not need to worry about any provisioning and maintancence of servers, and they function will always be available. To start off with we will create just a simple "Hello, World!" program. Unlike normal programs where the output is for a user to see, the output from our Lambda function is for another program to use, so the output will be in a machine freindly format, namely JSON.
+We will use AWS Lambda to run our back end code. The language we will use is Python, although other languages are available. Once again the advantage of running the code in AWS Lambda is that we need not worry about any provisioning and maintenance of servers, and their function will always be available. To start off with we will create just a simple "Hello, World!" program. Unlike normal programs where the output is for a user to see, the output from our Lambda function is for another program to use, so the output will be in a machine-friendly format, namely JSON.
 
 Tasks:
 
 - create a Lambda function that returns "Hello, World!"
 	- we need to ensure we use the "role" we just created previously
-	- we also need to create "test cases" for it to use as input when we go and test the function to ensure it is running correctly
+	- we also need to create "test cases" for it to use as input when we test the function to ensure it is running correctly
 
 .. code-block:: python
 
