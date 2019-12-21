@@ -4,7 +4,16 @@
 IAM
 ****
 
-Before we do any more work with AWS, the next thing we need is to create some permissions so that we can give access to certain AWS services by other services. For example eventually we will want some code (Lambda function) to access the database. Unless we create permissions to let this happen, hopefully the database will not just let anyone access it! 
+Before we do any more work with AWS, the next thing we need is to create some permissions so that we can give access to certain AWS services by other services. For example eventually we will want some code (Lambda function) to access the database. Unless we create permissions to let this happen, hopefully the database will not just let anyone access it!
+
+Tasks:
+
+- create GitHub repo
+- create Cloud9 instantce
+- connect root of Cloud9 instance to GitHub repo
+- create index.html file in root of Cloud9
+- update GitHub repo
+- create Amplify instance connected to GitHub repo 
 
 Code:
 
