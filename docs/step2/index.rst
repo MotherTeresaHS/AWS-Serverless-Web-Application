@@ -6,23 +6,11 @@ IAM
 
 Before we do any more work with AWS, the next thing we need is to create some permissions so that we can give access to certain AWS services by other services. For example eventually we will want some code (Lambda function) to access the database. Unless we create permissions to let this happen, hopefully the database will not just let anyone access it!
 
+To do this we will be using AWS IAM (Identity and Access Management). We will create a "role" that will give Lambda functions permissions to access DynamoDB, the database we will be using.
+
 Tasks:
 
-- create GitHub repo
-- create Cloud9 instantce
-- connect root of Cloud9 instance to GitHub repo
-- create index.html file in root of Cloud9
-- update GitHub repo
-- create Amplify instance connected to GitHub repo 
-
-Code:
-
-.. code-block:: shell
-
-	vocstartsoft:~/environment $ git init
-	Initialized empty Git repository in /home/ubuntu/environment/.git/
-	vocstartsoft:~/environment (master) $ git remote add origin https://github.com/Mr-Coxall/Amplify-Test
-	vocstartsoft:~/environment (master) $ git pull origin master
+- create role in IAM, for Lambda's to access DynamoDB
 
 .. raw:: html
 
