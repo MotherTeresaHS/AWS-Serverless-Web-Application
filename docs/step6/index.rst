@@ -18,7 +18,7 @@ Tasks:
 
 .. code-block:: shell
 
-	## set what the Lambda parameter is : what will be passed in the URL
+	## set what the Lambda parameter is named : what name will be passed in the URL
 
 	#set($inputRoot = $input.path('$'))
 	{"email_address":"$input.params('user_email')"}
