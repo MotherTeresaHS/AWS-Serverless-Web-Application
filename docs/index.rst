@@ -20,3 +20,8 @@ In this project we will be making an AWS Serverless Web App. We will be using an
   step3/index
   step4/index
   step5/index
+  step6/index
+  step7/index
+  step8/index
+  step9/index
+  step10/index
