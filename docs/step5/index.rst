@@ -4,9 +4,9 @@
 Boto3
 *****
 
-We will now revisit Lambda functions again. Now that we have a database with information in it, we can create a Lambda function that will retreive a row (or several rows). As part of AWS Lambda, there is a Python library called Boto3. This allows you to access any AWS service in Python code. We will use this library to access the database, get back a JSON file and then return it from Lambda.
+We will once again revisit Lambda functions. Now that we have a database with information in it, we can create a Lambda function that will retreive a row (or several rows). As part of AWS, there is a Python library called Boto3. This library allows you to access any AWS service using Python code. We will use this library to access the DynamoDB, get back a JSON file and then return it from Lambda.
 
-There is going to be just one problem when we get back the data. We created a row that was "age" and holds a "decimal" value type. It turns out that Boto3 returns this type of value in a "strange" format, that if we just returned from lambda we would get an error. To prevent this we will include a helper function that will re-format our decimal number value into something we can use.
+There is going to be just one problem when we get back the data from DynamoDB. We created a row that was "age" and holds a "decimal" value type. It turns out that Boto3 returns this type of value in a *strange* format, that if we just returned it from lambda as JSON we would get an error. To prevent this we will include a helper function that will re-format our decimal number value into something we can use.
 
 Tasks:
 
@@ -15,8 +15,8 @@ Tasks:
 - query the database to return a row of information
 - return the row in JSON format from the lambda function
 	- we will pull out the "Item" element from the returned data, since that is what we are interested in
-	- if no row was returned, then we need to catch this case and return an empty return satement
-	- if there is a row returned, we need to reformat the "decimal" type, so that we do not get an error
+	- if no row was returned, then we need to catch this case and return an empty return statement
+	- if there is a row returned, we need to re-format the "decimal" type, so that we do not get an error
 
 .. code-block:: python
 
@@ -55,7 +55,7 @@ Tasks:
 
 
 	def lambda_handler(event, context):
-	    # get row from our chocolates_user table
+	    # get a row from our chocolates_user table
 	    
 	    dynamodb = boto3.resource('dynamodb')
 	    table = dynamodb.Table('chocolate_users')
@@ -75,7 +75,6 @@ Tasks:
 	        'statusCode': 200,
 	        'body': json.dumps(results)
 	    }
-
 
 
 .. raw:: html
