@@ -4,7 +4,7 @@
 HTML
 ****
 
-Now that we have a fully functional API, lets write some HTML and JavaScript to show the information in a webpage. We will use the JavaScript "Fetch" method to call our API, get back the JSON file, parse out the information we want and then present that in our webpage inside a <div> element.
+Now that we have a fully functional API, let's write some HTML and JavaScript to show the information on a webpage. We will use the JavaScript "Fetch" method to call our API, get back the JSON file, parse out the information we want and then present that on our webpage inside a <div> element.
 
 Tasks:
 
