@@ -1,8 +1,13 @@
-.. _step6:
+.. _step06:
 
 ***********
 API Gateway
 ***********
+
+.. image:: ./images/AWS Serverless Web Application - API Gateway.jpg
+  :width: 480 px
+  :alt: AWS Serverless Web App
+  :align: center
 
 Now that we have a Lambda function that will access our table and return information, we need to make that logic accessible on the Internet. This way we can write HTML and JavaScript code to get the information and present it on a web page. To do this, we will use AWS API Gateway.
 

@@ -1,8 +1,13 @@
-.. _step4:
+.. _step04:
 
 ********
 DynamoDB
 ********
+
+.. image:: ./images/AWS Serverless Web Application - DynamoDB.jpg
+  :width: 480 px
+  :alt: AWS Serverless Web App
+  :align: center
 
 We will use AWS DynamoDB as our back-end database. This is a NoSQL database service, so if you have never used databases before, do not worry. Just assume that the table we create is just like a simple spreadsheet, it has rows with different information in it and it saves the information in columns. Just like a good spreadsheet, we need to have a unique "key" that uniquely identifies each row. In a spreadsheet, it usually has row numbers. In our example, we will use an email address, since that is a good unique key for a user of a web application.
 

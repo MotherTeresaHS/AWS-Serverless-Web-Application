@@ -1,8 +1,13 @@
-.. _step7:
+.. _step07:
 
 **************
 Error Handling
 **************
+
+.. image:: ./images/AWS Serverless Web Application - Error.jpg
+  :width: 480 px
+  :alt: AWS Serverless Web App
+  :align: center
 
 Our API Gateway is now working if you pass the correct parameters into it. The next question is what happens if someone does not pass the proper parameters in or even no parameters at all? Sadly, we get a really nasty error message coming back. This is OK, but really we should be nice programmers and handle it better. What we will do is alter our Lambda code to trap these kinds of errors.
 

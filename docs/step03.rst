@@ -4,6 +4,11 @@
 Lambda Function
 ***************
 
+.. image:: ./images/AWS Serverless Web Application - Lambda.jpg
+  :width: 480 px
+  :alt: AWS Serverless Web App
+  :align: center
+
 We will use AWS Lambda to run our back end code. The language we will use is Python, although other languages are available. Once again the advantage of running the code in AWS Lambda is that we need not worry about any provisioning and maintenance of servers, and their function will always be available. To start off with we will create just a simple "Hello, World!" program. Unlike normal programs where the output is for a user to see, the output from our Lambda function is for another program to use, so the output will be in a machine-friendly format, namely JSON.
 
 Tasks:

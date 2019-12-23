@@ -1,8 +1,13 @@
-.. _step8:
+.. _step08:
 
 ****
 HTML
 ****
+
+.. image:: ./images/AWS Serverless Web Application - HTML.jpg
+  :width: 480 px
+  :alt: AWS Serverless Web App
+  :align: center
 
 Now that we have a fully functional API, let's write some HTML and JavaScript to show the information on a webpage. We will use the JavaScript "Fetch" method to call our API, get back the JSON file, parse out the information we want and then present that on our webpage inside a <div> element.
 
@@ -48,6 +53,6 @@ Tasks:
 .. raw:: html
 
   <div style="text-align: center; margin-bottom: 2em;">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/IBfbIfa1YFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/2lxjWoFeABU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 	</iframe>
   </div>

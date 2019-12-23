@@ -1,8 +1,13 @@
-.. _step0:
+.. _step00:
 
 *************
 Prerequisites
 *************
+
+.. image:: ./images/AWS Serverless Web Application.jpg
+  :width: 480 px
+  :alt: AWS Serverless Web App
+  :align: center
 
 To do this tutorial, it is assumed that you have access to certain tools and that you know the basics of certain programming technologies. To be able to complete this tutorial you will need:
 

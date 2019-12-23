@@ -1,8 +1,13 @@
-.. _step1:
+.. _step01:
 
 *******
 Amplify
 *******
+
+.. image:: ./images/AWS Serverless Web Application - Amplify.jpg
+  :width: 480 px
+  :alt: AWS Serverless Web App
+  :align: center
 
 We will use AWS Amplify to host our web app so it is always available and we do not need to worry about provisioning servers, auto-scaling instances or anything else about managing web content. We will also use AWS Cloud9 as our IDE to write our HTML in and then publish all the code to GitHub as our version control system.
 

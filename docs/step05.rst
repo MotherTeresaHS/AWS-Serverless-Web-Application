@@ -1,8 +1,13 @@
-.. _step5:
+.. _step05:
 
 *****
 Boto3
 *****
+
+.. image:: ./images/AWS Serverless Web Application - Boto3.jpg
+  :width: 480 px
+  :alt: AWS Serverless Web App
+  :align: center
 
 We will once again revisit Lambda functions. Now that we have a database with information in it, we can create a Lambda function that will retrieve a row (or several rows). As part of AWS, there is a Python library called Boto3. This library allows you to access any AWS service using Python code. We will use this library to access the DynamoDB, get back a JSON file, and then return it from Lambda.
 

@@ -14,14 +14,14 @@ In this project we will be making an AWS Serverless Web App. We will be using an
   :titlesonly:
 
   self
-  step0/index
-  step1/index
-  step2/index
-  step3/index
-  step4/index
-  step5/index
-  step6/index
-  step7/index
-  step8/index
-  step9/index
-  step10/index
+  step00
+  step01
+  step02
+  step03
+  step04
+  step05
+  step06
+  step07
+  step08
+  step09
+  step10

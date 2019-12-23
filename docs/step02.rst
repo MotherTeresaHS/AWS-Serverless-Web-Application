@@ -1,8 +1,13 @@
-.. _step2:
+.. _step02:
 
 ****
 IAM
 ****
+
+.. image:: ./images/AWS Serverless Web Application - IAM.jpg
+  :width: 480 px
+  :alt: AWS Serverless Web App
+  :align: center
 
 Before we do any more work with AWS, the next thing we need is to create some permissions so we can give access to certain AWS services by other services. For example, eventually, we will want some code (Lambda function) to access the database. Unless we create permissions to let this happen, hopefully, the database will not just let anyone access it!
 
