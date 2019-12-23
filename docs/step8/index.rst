@@ -1,16 +1,15 @@
 .. _step8:
 
-***********
-JavaScript
-***********
+****
+HTML
+****
 
-Now that we have a fully functional API, lets write some JavaScript to show the information in a webpage. We will use the JavaScript "Fetch" method to call our API, get back the JSON file, parse out the information we want and then present that in our webpage.
+Now that we have a fully functional API, lets write some HTML and JavaScript to show the information in a webpage. We will use the JavaScript "Fetch" method to call our API, get back the JSON file, parse out the information we want and then present that in our webpage inside a <div> element.
 
 Tasks:
 
-- create a new JavaScript file
-	- attach it to our index.html file
-- in the JavaScript file, call our API
+- add a <div> section
+- add a <script> section, calling our API
 - get back JSON file and place the info in a variable
 - present the data in our index.html file
 
