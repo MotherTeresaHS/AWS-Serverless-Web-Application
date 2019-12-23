@@ -4,6 +4,11 @@
 JavaScript
 **********
 
+.. image:: ./images/AWSServerlessWebApplication-JS.jpg
+  :width: 480 px
+  :alt: AWS Serverless Web App
+  :align: center
+
 The basics of our app are now complete. The next thing to tackle is to fix up our HTML. It is good practise to actually remove the JavaScript code and place it in a seperate file. This way the code and content are seperate. What we will do is remove the get_user() function and call it from our HTML. We will also place a button in the webpage to make the function call and a table to place the data in, so it looks nicer.
 
 Tasks:

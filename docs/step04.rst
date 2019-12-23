@@ -4,7 +4,7 @@
 DynamoDB
 ********
 
-.. image:: ./images/AWS Serverless Web Application - DynamoDB.jpg
+.. image:: ./images/AWSServerlessWebApplication-DynamoDB.jpg
   :width: 480 px
   :alt: AWS Serverless Web App
   :align: center

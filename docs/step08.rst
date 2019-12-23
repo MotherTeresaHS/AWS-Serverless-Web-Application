@@ -4,7 +4,7 @@
 HTML
 ****
 
-.. image:: ./images/AWS Serverless Web Application - HTML.jpg
+.. image:: ./images/AWSServerlessWebApplication-HTML.jpg
   :width: 480 px
   :alt: AWS Serverless Web App
   :align: center

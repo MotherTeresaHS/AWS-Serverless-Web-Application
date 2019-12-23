@@ -4,7 +4,7 @@
 Error Handling
 **************
 
-.. image:: ./images/AWS Serverless Web Application - Error.jpg
+.. image:: ./images/AWSServerlessWebApplication-Error.jpg
   :width: 480 px
   :alt: AWS Serverless Web App
   :align: center
