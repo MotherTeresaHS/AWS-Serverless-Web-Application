@@ -8,14 +8,41 @@ Now that we have a fully functional API, lets write some HTML and JavaScript to 
 
 Tasks:
 
-- add a <div> section
+- add a <div> section to hold the data
 - add a <script> section, calling our API
 - get back JSON file and place the info in a variable
 - present the data in our index.html file
 
-.. code-block:: javascript
+.. code-block:: html
 
-	#
+	<!DOCTYPE html>
+	<html>
+	  <head>
+	    <title>Web App</title>
+	  </head>
+	  <body>
+	    <div id="user_info">
+	      <p>Please wait ...</p>
+	    </div>
+	    <div>
+	      <button onclick="getUser()">Click me</button>
+	    </div>
+	  </body>
+	  
+	  <script type="text/javascript">
+	    
+	    async function getUser() {
+	      // get the user info from API
+	      
+	      const api_url = 'your_API_URL?user_email=jane.smith@gmail.com'
+	      const api_response = await fetch(api_url);
+	      const api_data = await(api_response).json();
+	      
+	      const div_user_info = document.getElementById('user_info');
+	      div_user_info.innerHTML = api_data['body'];
+	    }
+	  </script>
+	</html>
 
 
 .. raw:: html
