@@ -11,6 +11,7 @@ In this project we will be making an AWS Serverless Web App. We will be using an
 
 .. toctree::
   :maxdepth: 1
+  :hidden:
   :titlesonly:
 
   self
