@@ -19,9 +19,11 @@ Tasks:
 - present the data in our new table
 
 .. code-block:: javascript
+	:linenos:
 
 
 .. code-block:: html
+	:linenos:
 
 	<!DOCTYPE html>
 	<html>

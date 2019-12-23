@@ -16,6 +16,7 @@ Tasks:
 - use try and except to catch wrong or no parameters being passed
 
 .. code-block:: python
+	:linenos:
 
 	def lambda_handler(event, context):
 	    # function returns a row from our chocolate_user DynmamoDB

@@ -16,8 +16,8 @@ API Gateway is a service that can make a Lambda function accessible by a URL. Ju
 Tasks:
 
 - create a new API Gateway
-	- add in CORS, so that any URL can access our API
-	- create a "GET" request, to get the user info
+- add in CORS, so that any URL can access our API
+- create a "GET" request, to get the user info
 - add in a "mapping" template, to specify what parameters it allows to be passed in
 - Enable CORS, or we cannot access the API due to being in different domains
 - publish the API, so it is visible on the Internet

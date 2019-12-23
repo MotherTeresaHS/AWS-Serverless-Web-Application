@@ -27,6 +27,20 @@ Tasks:
 	vocstartsoft:~/environment (master) $ git remote add origin https://github.com/Mr-Coxall/Amplify-Test
 	vocstartsoft:~/environment (master) $ git pull origin master
 
+.. code-block:: html
+	:linenos:
+
+	<!DOCTYPE html>
+	<html>
+	  <head>
+	    <title>AWS Serverless Web App</title>
+	  </head>
+	  <body>
+	    Hello, World!
+	  </body>
+	</html>
+
+
 .. raw:: html
 
   <div style="text-align: center; margin-bottom: 2em;">

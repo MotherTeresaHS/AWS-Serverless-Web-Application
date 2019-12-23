@@ -14,10 +14,11 @@ We will use AWS Lambda to run our back end code. The language we will use is Pyt
 Tasks:
 
 - create a Lambda function that returns "Hello, World!"
-	- we need to ensure we use the "role" we just created previously
-	- we also need to create "test cases" for it to use as input when we test the function to ensure it is running correctly
+- we need to ensure we use the "role" we just created previously
+- we also need to create "test cases" for it to use as input when we test the function to ensure it is running correctly
 
 .. code-block:: python
+	:linenos:
 
 	#!/usr/bin/env python3
 

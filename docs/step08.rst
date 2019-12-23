@@ -19,6 +19,7 @@ Tasks:
 - present the data in our index.html file
 
 .. code-block:: html
+	:linenos:
 
 	<!DOCTYPE html>
 	<html>

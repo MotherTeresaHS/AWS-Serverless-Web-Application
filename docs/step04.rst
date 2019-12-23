@@ -14,7 +14,7 @@ We will use AWS DynamoDB as our back-end database. This is a NoSQL database serv
 Tasks:
 
 - create a DynamoDB table
-	- we will place some data into our database by hand, just to ensure it works correctly
+- we will place some data into our database by hand, just to ensure it works correctly
 - change the "capacity" of the database because for our tests, we do not need so much power (and it will cost less!)
 
 
