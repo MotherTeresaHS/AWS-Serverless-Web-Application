@@ -4,17 +4,18 @@
 API Gateway
 ***********
 
-Now that we have a Lambda function that will access our table and return information, we need to make that logic accessable on the internet. This way we can write HTML and JavaScript code to get the information and present it in a web page. To do this we will use AWS API Gateway.
+Now that we have a Lambda function that will access our table and return information, we need to make that logic accessible on the Internet. This way we can write HTML and JavaScript code to get the information and present it on a web page. To do this, we will use AWS API Gateway.
 
-API Gateway is a service that can make a Lambda function accessable by a URL. Just like our Lambda function needed a parameter passed to it to know what user information to get back, as part of the URL we will pass in what user information we would like back.
+API Gateway is a service that can make a Lambda function accessible by a URL. Just like our Lambda function needed a parameter passed to it to know what user information to get back, as part of the URL we will pass in what user information we would like back.
 
 Tasks:
 
 - create a new API Gateway
 	- add in CORS, so that any URL can access our API
 	- create a "GET" request, to get the user info
-- add in a "mapping" template, to specify what parameters are allowed to be passed in
-- publish the API, so that it is visible on the internet
+- add in a "mapping" template, to specify what parameters it allows to be passed in
+- Enable CORS, or we cannot access the API due to being in different domains
+- publish the API, so it is visible on the Internet
 
 .. code-block:: shell
 
@@ -23,10 +24,14 @@ Tasks:
 	#set($inputRoot = $input.path('$'))
 	{"email_address":"$input.params('user_email')"}
 
+.. code-block:: shell
+
+	user_email=jane.smith@gmail.com
+
 
 .. raw:: html
 
   <div style="text-align: center; margin-bottom: 2em;">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/IBfbIfa1YFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/B_xZgSDfJuk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 	</iframe>
   </div>
