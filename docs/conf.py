@@ -40,7 +40,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Computer Based Problem Solving'
+project = u'AWS Serverless Web Application'
 copyright = u'2020, Patrick Coxall'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -131,7 +131,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = "images/cs-logo.png"
+html_logo = "images/logo.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -190,7 +190,7 @@ def setup(app):
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'togadoc'
+htmlhelp_basename = 'help_doc'
 
 try:
     import sphinx_rtd_theme
@@ -216,7 +216,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'toga.tex', u'Computer Based Problem Solving',
+  ('index', 'toga.tex', u'AWS Serverless Web Application',
    u'Patrick Coxall', 'manual'),
 ]
 
@@ -246,7 +246,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'CBPS', u'Computer Based Problem Solving',
+    ('index', 'CBPS', u'AWS Serverless Web Application',
      [u'Patrick Coxall'], 1)
 ]
 
@@ -260,8 +260,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'CBPS', u'Computer Based Problem Solving',
-   u'Patrick Coxall', 'CBPS', 'Computer Based Problem Solving Textbook.',
+  ('index', 'CBPS', u'AWS Serverless Web Application',
+   u'Patrick Coxall', 'CBPS', 'AWS Serverless Web Application',
    'Miscellaneous'),
 ]
 
