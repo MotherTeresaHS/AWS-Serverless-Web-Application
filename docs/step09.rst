@@ -9,7 +9,6 @@ Cognito
   :alt: AWS Serverless Web App
   :align: center
 
-The next major task is to have the ability to sign in to our website. This prevents people from accessing things they should not and will also give use the ability to present individualized content for a particular user that has signed in, since we know who is looking at the website.
 The next major task is to have the ability to sign in to our website. This prevents people from accessing things they should not and will also give use the ability to present individualized content for a particular user that has signed in, since we know who is looking at the website. So instead of us hard coding the user email address to get back the infomation from the database, since a user has signed in, it should automatically return their information.
 
 To do this we are going to use an AWS service called Cognito. This will provide all the user account management; importantly managing the user's login and password. You *do not want to manage users passwords yourself*, this is a really complicated thing to do properly (see the video below on why you should never save user passwords yourself). To avoid this AWS Cognito will manage our user login, the email address, and the passwords. We will use built in JavaScript libraries, provided by Cognito, to check what user has just signed in. 
