@@ -9,13 +9,13 @@ Sign Out
   :alt: AWS Serverless Web App
   :align: center
 
-Users can now sign into our app and we can return their email address. The next logical step is to allow users to actually log out of the app, so someone else can not just get access to their data. To log out we are going to use the exact same Cognito libraries, we will literally just call the **signout()* method and this will sign the user out. We will not use a button but call the JavaScript function as soon as the webpage loads.
+Users can now sign in to our app and we can return their email address. The next logical step is to allow users to log out of the app, so someone else can not just get access to their data. To log out, we will use the same Cognito libraries, we will literally just call the **signout()** method and this will sign the user out. We will not use a button but call the JavaScript function as soon as the webpage loads.
 
 Tasks:
 
 - write file sign-out.html, that just has some text explaining you are now signed out
 - write the JavaScript function to sign the user out
-- confirm the user is actually signed in, and write this to the console just to prove it is working, then call signout() function
+- confirm they actually sign the user in, and write this to the console just to prove it is working, then call signout() function
 
 .. code-block:: html
 	:linenos:

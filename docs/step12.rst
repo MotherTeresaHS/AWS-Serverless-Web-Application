@@ -9,9 +9,9 @@ Profile
   :alt: AWS Serverless Web App
   :align: center
 
-The next big step is to confirm that we can integrate what we currently have in temp.html, the ability to get user information from the database, with our ability to sign in a user. What we want is that after the user has signed in, to go to a web page and automatically call the API to show the user info from the database.
+The next big step is to confirm that we can integrate what we have in temp.html, the ability to get user information from the database, with our ability to sign in a user. What we want is that after the user has signed in, go to a web page and automatically call the API to show the user info from the database.
 
-To do this we will take the sign-out.html code and copy it. We will remove the function that signs the user out, but keep the bit that confirms the user is signed in. Once we confirm the user is signed in, we will copy the function from sign-in.html that returns the user's email address. We will call this function, grab the email address and pass it as a parameter into the function from temp.html that calls the API. This will then hopefully return the user info from the database.
+To do this, we will take the sign-out.html code and copy it. We will remove the function that signs the user out, but keep the bit that confirms we sign the user in. Once we confirm we sign the user in, we will copy the function from sign-in.html that returns the user's email address. We will call this function, grab the email address, and pass it as a parameter into the function from temp.html that calls the API. This will then hopefully return the user info from the database.
 
 Tasks:
 
@@ -19,7 +19,7 @@ Tasks:
 - remove sign-out code
 - copy over getUserAttributes() function from sign-in.html
 - copy over getUser() function from temp.html
-- show profile results in <div>
+- show profile results in div
 
 .. code-block:: html
 	:linenos:
