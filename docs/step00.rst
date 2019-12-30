@@ -4,8 +4,8 @@
 Prerequisites
 *************
 
-.. image:: ./images/AWSServerlessWebApplication.jpg
-  :width: 800 px
+.. image:: ./images/AWSServerlessWebApplication-Prerequisites.jpg
+  :width: 720 px
   :alt: AWS Serverless Web App
   :align: center
 

@@ -5,7 +5,7 @@ Amplify
 *******
 
 .. image:: ./images/AWSServerlessWebApplication-Amplify.jpg
-  :width: 800 px
+  :width: 720 px
   :alt: AWS Serverless Web App
   :align: center
 

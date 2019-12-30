@@ -5,7 +5,7 @@ JavaScript
 **********
 
 .. image:: ./images/AWSServerlessWebApplication-JavaScript.jpg
-  :width: 800 px
+  :width: 720 px
   :alt: AWS Serverless Web App
   :align: center
 

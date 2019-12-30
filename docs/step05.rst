@@ -5,7 +5,7 @@ Boto3
 *****
 
 .. image:: ./images/AWSServerlessWebApplication-Boto3.jpg
-  :width: 800 px
+  :width: 720 px
   :alt: AWS Serverless Web App
   :align: center
 

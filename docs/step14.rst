@@ -5,7 +5,7 @@ CSS
 ***
 
 .. image:: ./images/AWSServerlessWebApplication-CSS.jpg
-  :width: 800 px
+  :width: 720 px
   :alt: AWS Serverless Web App
   :align: center
 
