@@ -4,7 +4,7 @@
 Sign Out
 ********
 
-.. image:: ./images/AWSServerlessWebApplication-Cognito.jpg
+.. image:: ./images/AWSServerlessWebApplication-SignOut.jpg
   :width: 480 px
   :alt: AWS Serverless Web App
   :align: center

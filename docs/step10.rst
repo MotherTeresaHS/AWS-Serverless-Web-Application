@@ -1,10 +1,10 @@
-.. _step09:
+.. _step10:
 
 *******
-Cognito
+Sign In
 *******
 
-.. image:: ./images/AWSServerlessWebApplication-Cognito.jpg
+.. image:: ./images/AWSServerlessWebApplication-SignIn.jpg
   :width: 480 px
   :alt: AWS Serverless Web App
   :align: center

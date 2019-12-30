@@ -4,7 +4,7 @@
 Profile
 *******
 
-.. image:: ./images/AWSServerlessWebApplication-Cognito.jpg
+.. image:: ./images/AWSServerlessWebApplication-Profile.jpg
   :width: 480 px
   :alt: AWS Serverless Web App
   :align: center

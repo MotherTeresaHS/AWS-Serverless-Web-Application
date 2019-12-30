@@ -1,10 +1,10 @@
-.. _stepxy:
+.. _step13:
 
 **********
 JavaScript
 **********
 
-.. image:: ./images/AWSServerlessWebApplication-JS.jpg
+.. image:: ./images/AWSServerlessWebApplication-JavaScript.jpg
   :width: 480 px
   :alt: AWS Serverless Web App
   :align: center
