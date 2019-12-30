@@ -14,9 +14,7 @@ The basics of our app are now complete. The next thing to tackle is to fix up ou
 Tasks:
 
 - create a js directory and a JavaScript file for our code
-- add button to our HTML
-- call the function, when button is pressed
-- present the data in a table
+- ...
 
 .. code-block:: javascript
 	:linenos:

@@ -95,9 +95,7 @@ Tasks:
 	</iframe>
   </div>
 
-.. seealso:: Boto3 documentation for `DynamDB 
-<https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html>`_
+.. seealso:: Boto3 documentation for `DynamDB <https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html>`_
 
-.. seealso:: `DynamDB Python examples 
-<https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Python.html>`_
+.. seealso:: `DynamDB Python examples <https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Python.html>`_
 
