@@ -9,7 +9,8 @@ Prerequisites
   :alt: AWS Serverless Web App
   :align: center
 
-To do this tutorial, it is assumed that you have access to certain tools and that you know the basics of certain programming technologies. To be able to complete this tutorial you will need:
+To do this tutorial, it is assumed that you have access to certain tools and that you know the basics of certain programming technologies. All the code can be found at `this 
+<https://github.com/MotherTeresaHS/AWS-Serverless-Web-Application>`_ GitHub link. To be able to complete this tutorial you will need:
 
 - Amazon Web Services (AWS) access. In the tutorial I will be using an AWS Education student account. It is more restrictive that a regular AWS account. All functionality in this tutorial is able to be done with a student account though.
 - GitHub account. If you do not already have one, you can register for a free account.
