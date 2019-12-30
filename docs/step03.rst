@@ -5,7 +5,7 @@ Lambda Function
 ***************
 
 .. image:: ./images/AWSServerlessWebApplication-Lambda.jpg
-  :width: 480 px
+  :width: 800 px
   :alt: AWS Serverless Web App
   :align: center
 
