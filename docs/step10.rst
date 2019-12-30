@@ -66,5 +66,4 @@ Tasks:
 	</iframe>
   </div>
 
-.. seealso:: Most of my Cognito code came from `this 
-<https://github.com/nrao57/AWS-Cognito-Tutorials>`_ tutorial
+.. seealso:: Most of my Cognito code came from `this <https://github.com/nrao57/AWS-Cognito-Tutorials>`_ tutorial

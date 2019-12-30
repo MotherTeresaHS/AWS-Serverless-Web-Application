@@ -94,3 +94,6 @@ Tasks:
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/IBfbIfa1YFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 	</iframe>
   </div>
+
+.. seealso:: Boto3 documentation for `DynamDB 
+<https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html>`_
