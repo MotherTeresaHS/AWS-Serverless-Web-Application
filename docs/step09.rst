@@ -11,14 +11,12 @@ Cognito
 
 The next major task is to have the ability to sign in to our website. This prevents people from accessing things they should not and will also give use the ability to present individualized content for a particular user that has signed in, since we know who is looking at the website. So instead of us hard coding the user email address to get back the infomation from the database, since a user has signed in, it should automatically return their information.
 
-To do this we are going to use an AWS service called Cognito. This will provide all the user account management; importantly managing the user's login and password. You *do not want to manage users passwords yourself*, this is a really complicated thing to do properly (see the video below on why you should never save user passwords yourself). To avoid this AWS Cognito will manage our user login, the email address, and the passwords. We will use built in JavaScript libraries, provided by Cognito, to check what user has just signed in. 
+To do this we are going to use an AWS service called Cognito. This will provide all the user account management; importantly managing the user's login and password. You *do not want to manage users passwords yourself*, this is a really complicated thing to do properly (see the video below on why you should never save user passwords yourself). To avoid this AWS Cognito will manage our user login, the email address, and the passwords.
 
 Tasks:
 
 - create an AWS Cognito user pool
 - create an app client
-- download the JavaScript libraries, `from here <https://github.com/MotherTeresaHS/AWS-Serverless-Web-Application/tree/master/js/>`_, and place them in a js folder
-- update the config.js file with your app information
 - use the Cognito built in sign up URL to create a user and click on the provided link to confirm the user
 - confirm the user now exists in the Congnito pool
 - ensure this user also exists in the DynamoDB table, so that this user has information in your table
@@ -45,7 +43,7 @@ Tasks:
 .. raw:: html
 
   <div style="text-align: center; margin-bottom: 2em;">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/IBfbIfa1YFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/8jlL-HKsE_Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 	</iframe>
   </div>
 
