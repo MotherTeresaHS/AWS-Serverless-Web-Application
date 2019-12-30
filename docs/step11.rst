@@ -1,8 +1,8 @@
-.. _step09:
+.. _step11:
 
-*******
-Cognito
-*******
+********
+Sign Out
+********
 
 .. image:: ./images/AWSServerlessWebApplication-Cognito.jpg
   :width: 480 px

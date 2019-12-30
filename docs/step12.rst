@@ -1,7 +1,7 @@
-.. _step09:
+.. _step12:
 
 *******
-Cognito
+Profile
 *******
 
 .. image:: ./images/AWSServerlessWebApplication-Cognito.jpg
