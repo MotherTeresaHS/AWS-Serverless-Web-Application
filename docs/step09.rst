@@ -26,25 +26,24 @@ Tasks:
 
 	window._config = {
 	    cognito: {
-	        userPoolId: 'xxx', // e.g. us-east-1_uXboG5pAb
-	        region: 'us-east-1', // e.g. us-east-1
-			clientId: 'yyy' // e.g. 6m2mqsko56fo558pp9g54ht4pb
+	    	userPoolId: 'xxx', // e.g. us-east-1_uXboG5pAb
+	      region: 'us-east-1', // e.g. us-east-1
+				clientId: 'yyy' // e.g. 6m2mqsko56fo558pp9g54ht4pb
 	    },
 	};
-
 
 .. raw:: html
 
   <div style="text-align: center; margin-bottom: 2em;">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/8ZtInClXe1Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-	</iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/8ZtInClXe1Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+		</iframe>
   </div>
 
 .. raw:: html
 
   <div style="text-align: center; margin-bottom: 2em;">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/8jlL-HKsE_Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-	</iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/8jlL-HKsE_Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+		</iframe>
   </div>
 
 .. seealso:: Most of my Cognito code came from `this <https://github.com/nrao57/AWS-Cognito-Tutorials>`_ tutorial

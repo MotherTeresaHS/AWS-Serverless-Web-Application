@@ -52,8 +52,6 @@ Tasks:
 	            'body': json.dumps({})
 	        }
 
-
-
 .. raw:: html
 
   <div style="text-align: center; margin-bottom: 2em;">
