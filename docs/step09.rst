@@ -24,13 +24,13 @@ Tasks:
 .. code-block:: shell
 	:linenos:
 
-	window._config = {
-		cognito: {
-			userPoolId: 'xxx', // e.g. us-east-1_uXboG5pAb
-			region: 'us-east-1', // e.g. us-east-1
-			clientId: 'yyy' // e.g. 6m2mqsko56fo558pp9g54ht4pb
-		},
-	};
+window._config = {
+  cognito: {
+    userPoolId: 'xxx', // e.g. us-east-1_uXboG5pAb
+    region: 'us-east-1', // e.g. us-east-1
+    clientId: 'yyy' // e.g. 6m2mqsko56fo558pp9g54ht4pb
+  },
+};
 
 .. raw:: html
 
