@@ -13,7 +13,6 @@ Now that we have a user in the Cognito system, we need a way for the user to act
 
 What we will do is download the libraries we need and place them in a folder called "js". This is a standard name used to place all your JavaScript files in. Once all the librarys are downloaded, you then need to update the **config.js** file with the information from Cognito. The we will write the HTML to have the login and password entered and a button to login. When you click on the button, a function will be called to check if this is a valid user from Cognito and if it is we will retruned a **token** and the user name. This will prove it is a valid user.
 
-
 Tasks:
 
 - download the JavaScript libraries, `from here <https://github.com/MotherTeresaHS/AWS-Serverless-Web-Application/tree/master/js/>`_, and place them in a js folder
@@ -22,7 +21,7 @@ Tasks:
 - write the JavaScript function to sign the user in
 - if the user is valid, show the user email address, returned from Cognito as well as a JWT token
 
-.. code-block:: shell
+.. code-block:: html
 	:linenos:
 
 	<!DOCTYPE html>
