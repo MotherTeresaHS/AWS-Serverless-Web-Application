@@ -17,8 +17,7 @@ Tasks:
 
 - create an AWS Cognito user pool
 - create an app client
-- download the JavaScript libraries, `from here 
-<https://github.com/MotherTeresaHS/AWS-Serverless-Web-Application/tree/master/js/>`_, and place them in a js folder
+- download the JavaScript libraries, `from here <https://github.com/MotherTeresaHS/AWS-Serverless-Web-Application/tree/master/js/>`_, and place them in a js folder
 - update the config.js file with your app information
 - use the Cognito built in sign up URL to create a user and click on the provided link to confirm the user
 - confirm the user now exists in the Congnito pool
