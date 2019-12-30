@@ -3,7 +3,7 @@ Home
 ====
 
 .. image:: ./images/AWSServerlessWebApplication.jpg
-  :width: 640 px
+  :width: 800 px
   :alt: AWS Serverless Web App
   :align: center
 
