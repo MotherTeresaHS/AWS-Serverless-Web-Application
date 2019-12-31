@@ -13,12 +13,13 @@ Users can now sign in to our app and we can return their email address. The next
 
 Tasks:
 
-- write file sign-out.html, that just has some text explaining you are now signed out
+- write file ``sign-out.html``, that just has some text explaining you are now signed out
 - write the JavaScript function to sign the user out
-- confirm they actually sign the user in, and write this to the console just to prove it is working, then call signout() function
+- confirm they actually sign the user in, and write this to the console just to prove it is working, then call **signout()** function
 
 .. code-block:: html
   :linenos:
+  :caption: sign-out.html
 
   <!doctype html>
   <html lang="en">
