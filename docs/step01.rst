@@ -29,6 +29,7 @@ Tasks:
 
 .. code-block:: html
 	:linenos:
+	:caption: index.html
 
 	<!DOCTYPE html>
 	<html>
