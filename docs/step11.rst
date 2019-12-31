@@ -18,65 +18,65 @@ Tasks:
 - confirm they actually sign the user in, and write this to the console just to prove it is working, then call signout() function
 
 .. code-block:: html
-	:linenos:
+  :linenos:
 
-	<!doctype html>
-	<html lang="en">
-	  <head>
-	    <meta charset="utf-8">
-		  <!--Cognito JavaScript-->
-			<script src="js/amazon-cognito-identity.min.js"></script>  
-			<script src="js/config.js"></script>
-	  </head>
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <!--Cognito JavaScript-->
+      <script src="js/amazon-cognito-identity.min.js"></script>  
+      <script src="js/config.js"></script>
+    </head>
 
-	  <body>
-			<div class="container">
-	      <div>
-	        <h1>Sign Out</h1>
-	        <p>Successfully signed-out</p>
-	      </div>
-			<div>
-			  
-	    <br>
-	    <div id='home'>
-	      <p>
-	        <a href='./index.html'>Home</a>
-	      </p>
-	    </div>
+    <body>
+    <div class="container">
+      <div>
+        <h1>Sign Out</h1>
+        <p>Successfully signed-out</p>
+      </div>
 
-			<script>
-				var data = { 
-					UserPoolId : _config.cognito.userPoolId,
-	        ClientId : _config.cognito.clientId
-	    	};
-	    	var userPool = new AmazonCognitoIdentity.CognitoUserPool(data);
-	    	var cognitoUser = userPool.getCurrentUser();
-		
-				window.onload = function(){
-	    		if (cognitoUser != null) {
-	        	cognitoUser.getSession(function(err, session) {
-	            if (err) {
-	            	alert(err);
-	              return;
-	            }
-	            console.log('session validity: ' + session.isValid());
-		
-							// sign out
-							cognitoUser.signOut();
-							console.log("Signed-out");
-	        	});
-	    		} else {
-	    			console.log("Already signed-out")
-	    		}
-				}
-	    </script>
-	    
-	  </body>
-	</html>
+      <br>
+      <div id='home'>
+        <p>
+        <a href='./index.html'>Home</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var data = { 
+        UserPoolId : _config.cognito.userPoolId,
+        ClientId : _config.cognito.clientId
+      };
+      var userPool = new AmazonCognitoIdentity.CognitoUserPool(data);
+      var cognitoUser = userPool.getCurrentUser();
+
+      window.onload = function(){
+        if (cognitoUser != null) {
+          cognitoUser.getSession(function(err, session) {
+              if (err) {
+                alert(err);
+                return;
+              }
+              console.log('session validity: ' + session.isValid());
+
+              // sign out
+              cognitoUser.signOut();
+              console.log("Signed-out");
+          });
+        } else {
+          console.log("Already signed-out")
+        }
+      }
+    </script>
+
+    </body>
+  </html>
 
 .. raw:: html
 
   <div style="text-align: center; margin-bottom: 2em;">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/Q0yzX1cc9Zo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-		</iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q0yzX1cc9Zo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
   </div>
