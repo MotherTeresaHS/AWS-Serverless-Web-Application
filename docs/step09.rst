@@ -21,17 +21,6 @@ Tasks:
 - confirm the user now exists in the Congnito pool
 - ensure this user also exists in the DynamoDB table, so that this user has information in your table
 
-.. code-block:: shell
-	:linenos:
-
-	window._config = {
-	  cognito: {
-	    userPoolId: 'xxx', // e.g. us-east-1_uXboG5pAb
-	    region: 'us-east-1', // e.g. us-east-1
-	    clientId: 'yyy' // e.g. 6m2mqsko56fo558pp9g54ht4pb
-	  },
-	};
-
 .. raw:: html
 
   <div style="text-align: center; margin-bottom: 2em;">

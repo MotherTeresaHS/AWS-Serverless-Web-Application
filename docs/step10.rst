@@ -21,6 +21,18 @@ Tasks:
 - write the JavaScript function to sign the user in
 - if the user is valid, show the user email address, returned from Cognito and a JWT token
 
+.. code-block:: javascript
+  :linenos:
+  :caption: config.js
+
+  window._config = {
+    cognito: {
+      userPoolId: 'xxx', // e.g. us-east-1_uXboG5pAb
+      region: 'us-east-1', // e.g. us-east-1
+      clientId: 'yyy' // e.g. 6m2mqsko56fo558pp9g54ht4pb
+    },
+  };
+  
 .. code-block:: html
   :linenos:
 
