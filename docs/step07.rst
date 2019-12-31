@@ -17,6 +17,7 @@ Tasks:
 
 .. code-block:: python
 	:linenos:
+	:caption: get_user_info.py Lambda function, with error handling
 
 	def lambda_handler(event, context):
 	    # function returns a row from our chocolate_user DynmamoDB
