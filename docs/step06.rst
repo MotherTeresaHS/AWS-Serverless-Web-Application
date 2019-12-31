@@ -23,6 +23,7 @@ Tasks:
 - publish the API, so it is visible on the Internet
 
 .. code-block:: shell
+    :caption: Mapping Templates
 
 	## set what the Lambda parameter is named : what name will be passed in the URL
 
@@ -30,6 +31,7 @@ Tasks:
 	{"email_address":"$input.params('user_email')"}
 
 .. code-block:: shell
+    :caption: Query Strings for testing
 
 	user_email=jane.smith@gmail.com
 
