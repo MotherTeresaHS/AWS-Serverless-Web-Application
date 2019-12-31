@@ -16,7 +16,7 @@ Tasks:
 - create GitHub repo
 - create Cloud9 instance
 - connect the root of Cloud9 instance to GitHub repo
-- create index.html file in the root of Cloud9
+- create ``index.html`` file in the root of Cloud9
 - update GitHub repo
 - create Amplify instance connected to GitHub repo 
 
