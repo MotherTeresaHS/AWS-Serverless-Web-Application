@@ -14,9 +14,9 @@ Now that we have a fully functional API, let's write some HTML and JavaScript to
 Tasks:
 
 - add a `<div>` section to hold the data
-- add a <script> section, calling our API
+- add a ``<script>`` section, calling our API
 - get back JSON file and place the info in a variable
-- present the data in our index.html file
+- present the data in our ``index.html`` file
 
 .. code-block:: html
 	:linenos:
