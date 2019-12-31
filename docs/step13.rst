@@ -9,12 +9,15 @@ JavaScript
   :alt: AWS Serverless Web App
   :align: center
 
-The basics of our app are now complete. The next thing to tackle is to fix up our HTML. It is good practise to actually remove the JavaScript code and place it in a seperate file. This way the code and content are seperate. What we will do is remove the get_user() function and call it from our HTML. We will also place a button in the webpage to make the function call and a table to place the data in, so it looks nicer.
+The basics of our app are now complete. The next thing to tackle is to fix up our HTML. It is good practise to actually remove the JavaScript code and place it in a seperate file. This way the code and content are seperate. What we will do to start is remove the **get_user()** function from ``profile.html`` and call it from our HTML. We will then remove the JavaScript code from ``sign-in.html`` and ``sign-out.html`` and create ``*.js`` files for the JavaScript code in each of these files. When done, all JavaScript will be moved out of the HTML files and into their own files.
 
 Tasks:
 
 - create a js directory and a JavaScript file for our code
-- ...
+- move the **<script>** code from ``profile.html`` into a ``profile.js`` file
+- fix the code up, so that there are no **global** variables, since all code must now be in functions
+- call the new function from ``profile.html``
+- do the same process to ``sign-in.html`` and ``sign-out.html``
 
 .. code-block:: javascript
 	:linenos:
