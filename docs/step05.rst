@@ -24,12 +24,15 @@ Tasks:
 - if there is a row returned, we need to re-format the "decimal" type, so that we do not get an error. We will once again revisit Lambda functions. Now that we have a database with information in it, we can create a Lambda function that will retrieve a row (or several rows). As part of AWS, there is a Python library called Boto3. This library allows you to access any AWS service using Python code. We will use this library to access the DynamoDB, get back a JSON file and then return it from Lambda.
 
 .. code-block:: shell
+    :caption: test case for Lambda function
+
 	{
   	  "email_address": "jane.smith@gmail.com"
 	}
 
 .. code-block:: python
 	:linenos:
+	:caption: get_user_info.py Lambda function
 
 	#!/usr/bin/env python3
 

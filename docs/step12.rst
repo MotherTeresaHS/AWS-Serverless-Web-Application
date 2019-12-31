@@ -105,5 +105,7 @@ Tasks:
 
   <div style="text-align: center; margin-bottom: 2em;">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/n8cfgANsLwA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>
+    </iframe>
   </div>
+
+.. warning:: The above code is a really bad way to write code. Anyone can look at the html and see the line: ``const api_url = 'https://gonvpjbyuf.execute-api.us-east-1.amazonaws.com/prod/user-profile?user_email=' + email_address;`` and then just place any email address they want in. They will then get access to all the user's info. I know it is un-secure but for now we are going to leave it.
