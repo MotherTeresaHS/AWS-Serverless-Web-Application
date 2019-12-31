@@ -109,5 +109,4 @@ Tasks:
     </iframe>
   </div>
 
-.. warning:: The above code is a **really** bad way to write this. Anyone can look at the html and see the line: ``const api_url = 'https://gonvpjbyuf.execute-api.us-east-1.amazonaws.com/prod/user-profile?user_email=' + email_address;`` and then just place any email address they want in. Once they find a valid email address, they will then get full access to all the user's info. 
-I know it is un-secure but for now we are going to leave it 😊.
+.. warning:: The above code is a **really** bad way to write this. Anyone can look at the html and see the line: ``const api_url = 'https://gonvpjbyuf.execute-api.us-east-1.amazonaws.com/prod/user-profile?user_email=' + email_address;`` and then just place any email address they want in. Once they find a valid email address, they will then get full access to all the user's info. I know it is un-secure but for now we are going to leave it 😊.
