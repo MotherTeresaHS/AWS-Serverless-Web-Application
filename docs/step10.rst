@@ -11,13 +11,13 @@ Sign In
 
 Now that we have a user in the Cognito system, we need a way for the user to sign in to the app. Cognito provides a built-in UI for this, but it does not work nicely with the way we will build our app. We will write our own HTML page, that uses some provided JavaScript libraries to log in.
 
-What we will do is download the libraries we need and place them in a folder called "js". This is a standard name used to place all your JavaScript files in. Once all the libraries are downloaded, you then need to update the **config.js** file with the information from Cognito. Then we will write the HTML to have the login and password entered and a button to log in. When you click on the button, we will call a function to check if this is a valid user from Cognito and if it is, we will return a **token** and the username. This will prove it is a valid user.
+What we will do is download the libraries we need and place them in a folder called "js". This is a standard name used to place all your JavaScript files in. Once all the libraries are downloaded, you then need to update the ``config.js`` file with the information from Cognito. Then we will write the HTML to have the login and password entered and a button to log in. When you click on the button, we will call a function to check if this is a valid user from Cognito and if it is, we will return a **token** and the username. This will prove it is a valid user.
 
 Tasks:
 
 - download the JavaScript libraries, `from here <https://github.com/MotherTeresaHS/AWS-Serverless-Web-Application/tree/master/js/>`_, and place them in a js folder
-- update the config.js file with your app information
-- write file sign-in.html, that has 2 input boxes and a sign-in button
+- update the ``config.js`` file with your app information
+- write file ``sign-in.html``, that has 2 input boxes and a sign-in button
 - write the JavaScript function to sign the user in
 - if the user is valid, show the user email address, returned from Cognito and a JWT token
 
@@ -32,9 +32,10 @@ Tasks:
       clientId: 'yyy' // e.g. 6m2mqsko56fo558pp9g54ht4pb
     },
   };
-  
+
 .. code-block:: html
   :linenos:
+  :caption: sign-in.html
 
   <!DOCTYPE html>
 
