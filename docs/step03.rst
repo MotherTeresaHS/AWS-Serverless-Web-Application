@@ -19,6 +19,7 @@ Tasks:
 
 .. code-block:: python
 	:linenos:
+	:caption: hello_world.py Lambda function
 
 	#!/usr/bin/env python3
 

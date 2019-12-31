@@ -21,6 +21,7 @@ Tasks:
 - create Amplify instance connected to GitHub repo 
 
 .. code-block:: shell
+	:caption: How to connect Cloud9 instance root to GitHub repo
 
 	vocstartsoft:~/environment $ git init
 	Initialized empty Git repository in /home/ubuntu/environment/.git/
