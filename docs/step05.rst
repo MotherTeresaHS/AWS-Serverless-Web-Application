@@ -5,7 +5,7 @@ Boto3
 *****
 
 .. image:: ./images/AWSServerlessWebApplication-Boto3.jpg
-  :width: 480 px
+  :width: 720 px
   :alt: AWS Serverless Web App
   :align: center
 
@@ -24,12 +24,15 @@ Tasks:
 - if there is a row returned, we need to re-format the "decimal" type, so that we do not get an error. We will once again revisit Lambda functions. Now that we have a database with information in it, we can create a Lambda function that will retrieve a row (or several rows). As part of AWS, there is a Python library called Boto3. This library allows you to access any AWS service using Python code. We will use this library to access the DynamoDB, get back a JSON file and then return it from Lambda.
 
 .. code-block:: shell
+    :caption: test case for Lambda function
+
 	{
   	  "email_address": "jane.smith@gmail.com"
 	}
 
 .. code-block:: python
 	:linenos:
+	:caption: get_user_info.py Lambda function
 
 	#!/usr/bin/env python3
 
@@ -91,6 +94,10 @@ Tasks:
 .. raw:: html
 
   <div style="text-align: center; margin-bottom: 2em;">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/IBfbIfa1YFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/CHS5vOpMDUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 	</iframe>
   </div>
+
+.. seealso:: Boto3 documentation for `DynamDB <https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html>`_
+
+.. seealso:: `DynamDB Python examples <https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Python.html>`_

@@ -5,7 +5,7 @@ Amplify
 *******
 
 .. image:: ./images/AWSServerlessWebApplication-Amplify.jpg
-  :width: 480 px
+  :width: 720 px
   :alt: AWS Serverless Web App
   :align: center
 
@@ -16,11 +16,12 @@ Tasks:
 - create GitHub repo
 - create Cloud9 instance
 - connect the root of Cloud9 instance to GitHub repo
-- create index.html file in the root of Cloud9
+- create ``index.html`` file in the root of Cloud9
 - update GitHub repo
 - create Amplify instance connected to GitHub repo 
 
 .. code-block:: shell
+	:caption: How to connect Cloud9 instance root to GitHub repo
 
 	vocstartsoft:~/environment $ git init
 	Initialized empty Git repository in /home/ubuntu/environment/.git/
@@ -29,6 +30,7 @@ Tasks:
 
 .. code-block:: html
 	:linenos:
+	:caption: index.html
 
 	<!DOCTYPE html>
 	<html>
@@ -44,6 +46,6 @@ Tasks:
 .. raw:: html
 
   <div style="text-align: center; margin-bottom: 2em;">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/kfHxzvBbOHo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-	</iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/kfHxzvBbOHo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+		</iframe>
   </div>

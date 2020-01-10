@@ -5,7 +5,7 @@ IAM
 ****
 
 .. image:: ./images/AWSServerlessWebApplication-IAM.jpg
-  :width: 480 px
+  :width: 720 px
   :alt: AWS Serverless Web App
   :align: center
 

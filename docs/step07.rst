@@ -5,7 +5,7 @@ Error Handling
 **************
 
 .. image:: ./images/AWSServerlessWebApplication-Error.jpg
-  :width: 480 px
+  :width: 720 px
   :alt: AWS Serverless Web App
   :align: center
 
@@ -17,6 +17,7 @@ Tasks:
 
 .. code-block:: python
 	:linenos:
+	:caption: get_user_info.py Lambda function, with error handling
 
 	def lambda_handler(event, context):
 	    # function returns a row from our chocolate_user DynmamoDB
@@ -51,8 +52,6 @@ Tasks:
 	            'statusCode': 204,
 	            'body': json.dumps({})
 	        }
-
-
 
 .. raw:: html
 

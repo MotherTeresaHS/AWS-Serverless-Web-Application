@@ -5,7 +5,7 @@ HTML
 ****
 
 .. image:: ./images/AWSServerlessWebApplication-HTML.jpg
-  :width: 480 px
+  :width: 720 px
   :alt: AWS Serverless Web App
   :align: center
 
@@ -13,13 +13,14 @@ Now that we have a fully functional API, let's write some HTML and JavaScript to
 
 Tasks:
 
-- add a <div> section to hold the data
-- add a <script> section, calling our API
+- add a ``<div>`` section to hold the data
+- add a ``<script>`` section, calling our API
 - get back JSON file and place the info in a variable
-- present the data in our index.html file
+- present the data in our ``index.html`` file
 
 .. code-block:: html
 	:linenos:
+	:caption: index.html
 
 	<!DOCTYPE html>
 	<html>
@@ -54,6 +55,6 @@ Tasks:
 .. raw:: html
 
   <div style="text-align: center; margin-bottom: 2em;">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/2lxjWoFeABU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-	</iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/2lxjWoFeABU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+		</iframe>
   </div>

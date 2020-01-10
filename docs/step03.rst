@@ -5,7 +5,7 @@ Lambda Function
 ***************
 
 .. image:: ./images/AWSServerlessWebApplication-Lambda.jpg
-  :width: 480 px
+  :width: 720 px
   :alt: AWS Serverless Web App
   :align: center
 
@@ -19,6 +19,7 @@ Tasks:
 
 .. code-block:: python
 	:linenos:
+	:caption: hello_world.py Lambda function
 
 	#!/usr/bin/env python3
 
