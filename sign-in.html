@@ -37,15 +37,22 @@
 
     <script>
     
-	    var data = { 
-				UserPoolId : _config.cognito.userPoolId,
-        ClientId : _config.cognito.clientId
-    	};
-    	var userPool = new AmazonCognitoIdentity.CognitoUserPool(data);
-    	var cognitoUser = userPool.getCurrentUser();
+	    //var data = { 
+			//	UserPoolId : _config.cognito.userPoolId,
+      //  ClientId : _config.cognito.clientId
+    	//};
+    	//var userPool = new AmazonCognitoIdentity.CognitoUserPool(data);
+    	//var cognitoUser = userPool.getCurrentUser();
 
       function signInButton() {
         // sign-in to AWS Cognito
+        
+        var data = { 
+				  UserPoolId : _config.cognito.userPoolId,
+          ClientId : _config.cognito.clientId
+    	  };
+    	  var userPool = new AmazonCognitoIdentity.CognitoUserPool(data);
+    	  var cognitoUser = userPool.getCurrentUser();
     
       	var authenticationData = {
           Username : document.getElementById("inputUsername").value,

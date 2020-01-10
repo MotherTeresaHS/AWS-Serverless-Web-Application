@@ -3,23 +3,37 @@
 function signInButton() {
   // sign-in to AWS Cognito
   
-  const data = { 
-  	UserPoolId : _config.cognito.userPoolId,
+  var data = { 
+	  UserPoolId : _config.cognito.userPoolId,
     ClientId : _config.cognito.clientId
   };
-  const userPool = new AmazonCognitoIdentity.CognitoUserPool(data);
-  const cognitoUser = userPool.getCurrentUser();
+  var userPool = new AmazonCognitoIdentity.CognitoUserPool(data);
+  var cognitoUser = userPool.getCurrentUser();
 
-	const authenticationData = {
+	var authenticationData = {
     Username : document.getElementById("inputUsername").value,
     Password : document.getElementById("inputPassword").value,
   };
 
-  const authenticationDetails = new AmazonCognitoIdentity.AuthenticationDetails(authenticationData);
+  var authenticationDetails = new AmazonCognitoIdentity.AuthenticationDetails(authenticationData);
+
+  var poolData = {
+    UserPoolId : _config.cognito.userPoolId, // Your user pool id here
+    ClientId : _config.cognito.clientId, // Your client id here
+  };
+
+  var userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
+
+  var userData = {
+    Username : document.getElementById("inputUsername").value,
+    Pool : userPool,
+  };
+
+  var cognitoUser = new AmazonCognitoIdentity.CognitoUser(userData);
 
   cognitoUser.authenticateUser(authenticationDetails, {
     onSuccess: function (result) {
-      const accessToken = result.getAccessToken().getJwtToken();
+      var accessToken = result.getAccessToken().getJwtToken();
       console.log(result);	
       
       //get user info, to show that you are logged in
@@ -31,8 +45,7 @@ function signInButton() {
 				console.log(result);
 				document.getElementById("logged-in").innerHTML = "You are logged in as: " + result[2].getValue();
 				
-				// now move to the profile page
-				console.log("Here");
+				// now auto redirect to profile page
 				window.location.replace("./profile.1.html");
 			});
       
