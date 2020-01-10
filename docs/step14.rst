@@ -9,7 +9,7 @@ CSS
   :alt: AWS Serverless Web App
   :align: center
 
-To make our website look more professional and also be help in maintaining its style, we will be using Google's MDL. This will acc CSS to our website.
+To make our website look more professional and also be help in maintaining its style, we will be using `Google's MDL <https://getmdl.io/>`_. This will acc CSS to our website.
 
 Tasks:
 

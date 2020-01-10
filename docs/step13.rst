@@ -14,10 +14,10 @@ The basics of our app are now complete. The next thing to tackle is to fix up ou
 Tasks:
 
 - create a js directory and a JavaScript file for our code
-- move the **<script>** code from ``profile.html`` into a ``profile.js`` file
+- move the **<script>** code from ``sign-in.html`` into a ``sign-in.js`` file
 - fix the code up, so that there are no **global** variables, since all code must now be in functions
-- call the new function from ``profile.html``
-- do the same process to ``sign-in.html`` and ``sign-out.html``
+- call the new function from ``sign-in.html``
+- do the same process to ``sign-out.html`` and ``profile.html``
 
 Sign In Code
 ************
@@ -265,6 +265,7 @@ Profile Code
   
     .. code-block:: javascript
         :linenos:
+        
         // JavaScript File
     
         async function getUser(email_address) {
