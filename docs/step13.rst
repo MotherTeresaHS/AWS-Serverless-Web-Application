@@ -9,112 +9,312 @@ JavaScript
   :alt: AWS Serverless Web App
   :align: center
 
-The basics of our app are now complete. The next thing to tackle is to fix up our HTML. It is good practise to actually remove the JavaScript code and place it in a seperate file. This way the code and content are seperate. What we will do to start is remove the **get_user()** function from ``profile.html`` and call it from our HTML. We will then remove the JavaScript code from ``sign-in.html`` and ``sign-out.html`` and create ``*.js`` files for the JavaScript code in each of these files. When done, all JavaScript will be moved out of the HTML files and into their own files.
+The basics of our app are now complete. The next thing to tackle is to fix up our HTML. It is good practise to actually remove the JavaScript code from within the HTML documents and place it in a seperate file. This way the code and content are seperate. What we will do to start is remove the **get_user()** function from ``profile.html`` and call it from our HTML. We will then remove the JavaScript code from ``sign-in.html`` and ``sign-out.html`` and create ``*.js`` files for the JavaScript code in each of these files. When done, all JavaScript will be moved out of the HTML files and into their own files.
 
 Tasks:
 
 - create a js directory and a JavaScript file for our code
-- move the **<script>** code from ``profile.html`` into a ``profile.js`` file
+- move the **<script>** code from ``sign-in.html`` into a ``sign-in.js`` file
 - fix the code up, so that there are no **global** variables, since all code must now be in functions
-- call the new function from ``profile.html``
-- do the same process to ``sign-in.html`` and ``sign-out.html``
+- call the new function from ``sign-in.html``
+- do the same process to ``sign-out.html`` and ``profile.html``
 
-.. code-block:: javascript
-	:linenos:
+Sign In Code
+************
 
-	// Created by: Mr. Coxall
-	// Created on: Jan 2020
-	// This function returns a row from our chocolate_user DynamoDB
-	//   2nd function just class the first one, but provides error checking for debugging
+.. tabs::
 
-	/* global fetch */   // so that you do not get a warning about the fetch function 
+  .. group-tab:: sign-in.html
 
-	async function getUser(email_address) {
-	  // get the user info from API
-	  
-	  const api_url = 'https://mfvjw1xkc9.execute-api.us-east-1.amazonaws.com/prod/user-info?user_email=' + email_address; 
-	  const api_response = await fetch(api_url);
-	  const api_data = await(api_response).json();
-	  const user_info = JSON.parse(api_data['body']);
-	  const div = document.getElementById('user_info');
-	  var html_table = ' \
-	    <table border=1> \
-	      <tr> \
-	        <th>Firstname</th> \
-	        <th>Lastname</th> \
-	        <th>Age</th> \
-	        <th>Email</th> \
-	      </tr>';
+    .. code-block:: html
+        :linenos:
 
-	  if (Object.entries(user_info).length === 0 && user_info.constructor === Object) {
-	    // check if response id empty 
-	    
-	    html_table = html_table + ' \
-	        <tr> \
-	          <td colspan="4">No data!</td> \
-	        </tr> \
-	      <table> \
-	    ';
-	  } else {
-	    // if there is data, place it in the table
-	    
-	    html_table = html_table + ' \
-	        <tr> \
-	          <td>' + user_info['first_name'] + '</td> \
-	          <td>' + user_info['last_name'] + '</td> \
-	          <td>' + user_info['age'] + '</td> \
-	          <td>' + user_info['email'] + '</td> \
-	        </tr> \
-	      <table> \
-	    ';
-	  }
-	  div.innerHTML = html_table;
-	}
+        <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            
+            <!-- Javascript SDKs-->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="js/amazon-cognito-auth.min.js"></script>
+            <script src="https://sdk.amazonaws.com/js/aws-sdk-2.596.0.min.js"></script> 
+            <script src="js/amazon-cognito-identity.min.js"></script>   
+            <script src="js/config.js"></script>
+            <script type="text/javascript" src="js/sign-in.js"></script>
+          </head>
+          
+          <body>
+            <form>
+              <h1>Please sign in</h1>
 
-	function getUserProfile(email_address) {
-	  getUser(email_address)
-	    .then(success => {
-	      console.log("Got the API data correctly")
-	    })
-	    .catch(error => {
-	      console.error(error);
-	    });
-	}
+              <input type="text" id="inputUsername"  placeholder="Email address" name="username" required autofocus>
+              <input type="password" id="inputPassword"  placeholder="Password" name="password" required>    
+              <button type="button" onclick="signInButton();">Sign in</button>
+            </form>
+            
+            <br>
+            <div id='logged-in'>
+              <p></p>
+            </div>
+            
+            <p><a href="./profile.1.html">Profile</a></p>
+            
+            <br>
+            <div id='home'>
+              <p>
+                <a href='./index.1.html'>Home</a>
+              </p>
+            </div>
+            
+          </body>
+        </html>
 
+  .. group-tab:: sign-in.js
+  
+    .. code-block:: javascript
+        :linenos:
 
+        // JavaScript File
 
-.. code-block:: html
-	:linenos:
+        function signInButton() {
+          // sign-in to AWS Cognito
+          
+          var data = { 
+              UserPoolId : _config.cognito.userPoolId,
+            ClientId : _config.cognito.clientId
+          };
+          var userPool = new AmazonCognitoIdentity.CognitoUserPool(data);
+          var cognitoUser = userPool.getCurrentUser();
 
-	<!DOCTYPE html>
-	<html>
-	  <head>
-	    <meta charset="UTF-8">
-	    <meta name="description" content="This website demos an AWS Serverless Web App">
-	    <meta name="keywords" content="AWS Serverless Web App">
-	    <meta name="author" content="Mr. Coxall">
-	    <meta name="date" content="Jan 2020">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    
-	    <title>Web App</title>
-	    
-	    <script async type="text/javascript" src="./js/get_user_profile.js"></script>
-	  </head>
-	  <body>
-	    <div id='call_button'>
-	      <button onclick="getUserProfile('mr.coxall@mths.ca')">Get Profile data</button>
-	    </div>
-	    <br>
-	    <div id="user_info">
-	    </div>
-	  </body>
-	</html>
+            var authenticationData = {
+            Username : document.getElementById("inputUsername").value,
+            Password : document.getElementById("inputPassword").value,
+          };
 
+          var authenticationDetails = new AmazonCognitoIdentity.AuthenticationDetails(authenticationData);
 
+          var poolData = {
+            UserPoolId : _config.cognito.userPoolId, // Your user pool id here
+            ClientId : _config.cognito.clientId, // Your client id here
+          };
+
+          var userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
+
+          var userData = {
+            Username : document.getElementById("inputUsername").value,
+            Pool : userPool,
+          };
+
+          var cognitoUser = new AmazonCognitoIdentity.CognitoUser(userData);
+
+          cognitoUser.authenticateUser(authenticationDetails, {
+            onSuccess: function (result) {
+              var accessToken = result.getAccessToken().getJwtToken();
+              console.log(result);  
+              
+              //get user info, to show that you are logged in
+                    cognitoUser.getUserAttributes(function(err, result) {
+                        if (err) {
+                            console.log(err);
+                            return;
+                        }
+                        console.log(result);
+                        document.getElementById("logged-in").innerHTML = "You are logged in as: " + result[2].getValue();
+                        
+                        // now auto redirect to profile page
+                        window.location.replace("./profile.1.html");
+                    });
+              
+            },
+            onFailure: function(err) {
+              alert(err.message || JSON.stringify(err));
+            },
+          });
+        }
+
+Sign Out Code
+************
+
+.. tabs::
+
+  .. group-tab:: sign-out.html
+
+    .. code-block:: html
+        :linenos:
+
+        <!doctype html>
+        <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <!--Cognito JavaScript-->
+            <script src="js/amazon-cognito-identity.min.js"></script>  
+            <script src="js/config.js"></script>
+            <script src="js/sign-out.js"></script>
+          </head>
+
+          <body>
+            <div class="container">
+              <div>
+                <h1>Sign Out</h1>
+                <div id='sign-out'>
+                  <p>One moment please ...</p>
+                </div>
+              </div>
+            <div>
+              
+            <br>
+            <div id='home'>
+              <p>
+                <a href='./index.1.html'>Home</a>
+              </p>
+            </div>
+          </body>
+          <script>
+            window.onload = function(){
+              const temp_var = signOut();
+            }
+          </script>
+        </html>
+
+  .. group-tab:: sign-out.js
+  
+    .. code-block:: javascript
+        :linenos:
+
+        // JavaScript File
+
+        function signOut() {
+          //
+          
+          return_message = "";
+          
+          const data = { 
+            UserPoolId : _config.cognito.userPoolId,
+            ClientId : _config.cognito.clientId
+          };
+          const userPool = new AmazonCognitoIdentity.CognitoUserPool(data);
+          const cognitoUser = userPool.getCurrentUser();
+
+          if (cognitoUser != null) {
+            cognitoUser.getSession(function(err, session) {
+              if (err) {
+                alert(err);
+                return;
+              }
+              console.log('session validity: ' + session.isValid());
+
+              // sign out
+              cognitoUser.signOut();
+              console.log("Signed-out");
+              return_message = "Signed-out";
+            });
+          } else {
+            console.log("Already signed-out")
+            return_message = "Already signed-out";
+          }
+          
+          const div_user_info = document.getElementById('sign-out');
+          div_user_info.innerHTML = return_message;
+        }
+
+Profile Code
+************
+
+.. tabs::
+
+  .. group-tab:: profile.html
+
+    .. code-block:: html
+        :linenos:
+
+        <!doctype html>
+        <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <!--Cognito JavaScript-->
+            <script src="js/amazon-cognito-identity.min.js"></script>  
+            <script src="js/config.js"></script>
+            <script type="text/javascript" src="js/profile.js"></script>
+          </head>
+
+          <body>
+            <div class="container">
+              <div>
+                <h1>Profile</h1>
+              </div>
+              <div id='profile'>
+                <p>One moment please ...</p>
+              </div>
+            <div>
+              
+            <br>
+            <div id='home'>
+              <p>
+                <a href='./index.1.html'>Home</a>
+              </p>
+            </div>
+          </body>
+          <script>
+            window.onload = function(){
+              const temp_var = getUserAttributes();
+            }
+          </script>
+        </html>
+
+  .. group-tab:: profile.js
+  
+    .. code-block:: javascript
+        :linenos:
+        
+        // JavaScript File
+    
+        async function getUser(email_address) {
+            // get the user info from API Gate
+            
+            const api_url = 'https://gonvpjbyuf.execute-api.us-east-1.amazonaws.com/prod/user-profile?user_email=' + email_address;
+            const api_response = await fetch(api_url);
+            const api_data = await(api_response).json();
+            console.log(api_data);
+            
+            const div_user_info = document.getElementById('profile');
+            div_user_info.innerHTML = api_data['body'];
+          }
+          
+        function getUserAttributes() {
+          var data = { 
+            UserPoolId : _config.cognito.userPoolId,
+            ClientId : _config.cognito.clientId
+          };
+          var userPool = new AmazonCognitoIdentity.CognitoUserPool(data);
+          var cognitoUser = userPool.getCurrentUser();
+
+          if (cognitoUser != null) {
+            cognitoUser.getSession(function(err, session) {
+              if (err) {
+                alert(err);
+                return;
+              }
+              //console.log('session validity: ' + session.isValid());
+              
+              cognitoUser.getUserAttributes(function(err, result) {
+                if (err) {
+                  console.log(err);
+                  return;
+                }
+                // user email address
+                console.log(result[2].getValue());
+                getUser(result[2].getValue()) 
+              });
+
+            });
+          } else {
+            console.log("Already signed-out")
+          }
+        }
 
 .. raw:: html
 
   <div style="text-align: center; margin-bottom: 2em;">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/IBfbIfa1YFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-	</iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IBfbIfa1YFcxxxx" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
   </div>
