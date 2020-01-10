@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	  <!--Cognito JavaScript-->
+		<script src="./js/amazon-cognito-identity.min.js"></script>  
+		<script src="./js/config.js"></script>
+		<script src="./js/sign-out.js"></script>
+  </head>
+
+  <body>
+		<div class="container">
+      <div>
+        <h1>Sign Out</h1>
+        <div id='sign-out'>
+          <p>One moment please ...</p>
+        </div>
+      </div>
+		<div>
+		  
+    <br>
+    <div id='home'>
+      <p>
+        <a href='./index.html'>Home</a>
+      </p>
+    </div>
+  </body>
+	<script>
+		window.onload = function(){
+      const temp_var = signOut();
+		}
+  </script>
+</html>
