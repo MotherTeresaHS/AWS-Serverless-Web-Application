@@ -132,6 +132,92 @@ Sign In Code
           });
         }
 
+Sign Out Code
+************
+
+.. tabs::
+
+  .. group-tab:: sign-out.html
+
+    .. code-block:: html
+        :linenos:
+
+        <!doctype html>
+        <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <!--Cognito JavaScript-->
+            <script src="js/amazon-cognito-identity.min.js"></script>  
+            <script src="js/config.js"></script>
+            <script src="js/sign-out.js"></script>
+          </head>
+
+          <body>
+            <div class="container">
+              <div>
+                <h1>Sign Out</h1>
+                <div id='sign-out'>
+                  <p>One moment please ...</p>
+                </div>
+              </div>
+            <div>
+              
+            <br>
+            <div id='home'>
+              <p>
+                <a href='./index.1.html'>Home</a>
+              </p>
+            </div>
+          </body>
+          <script>
+            window.onload = function(){
+              const temp_var = signOut();
+            }
+          </script>
+        </html>
+
+  .. group-tab:: sign-out.js
+  
+    .. code-block:: javascript
+        :linenos:
+
+        // JavaScript File
+
+        function signOut() {
+          //
+          
+          return_message = "";
+          
+          const data = { 
+            UserPoolId : _config.cognito.userPoolId,
+            ClientId : _config.cognito.clientId
+          };
+          const userPool = new AmazonCognitoIdentity.CognitoUserPool(data);
+          const cognitoUser = userPool.getCurrentUser();
+
+          if (cognitoUser != null) {
+            cognitoUser.getSession(function(err, session) {
+              if (err) {
+                alert(err);
+                return;
+              }
+              console.log('session validity: ' + session.isValid());
+
+              // sign out
+              cognitoUser.signOut();
+              console.log("Signed-out");
+              return_message = "Signed-out";
+            });
+          } else {
+            console.log("Already signed-out")
+            return_message = "Already signed-out";
+          }
+          
+          const div_user_info = document.getElementById('sign-out');
+          div_user_info.innerHTML = return_message;
+        }
+
+
 
 
 
