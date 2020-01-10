@@ -9,12 +9,15 @@ CSS
   :alt: AWS Serverless Web App
   :align: center
 
-To make our website look more professional and also be help in maintaining its style, we will be using `Google's MDL <https://getmdl.io/>`_. This will act as CSS to our website. Most basic websites have a menu at the top and the content below. We will use this model. The menu will contain:
+To make our website look more professional and also be help in maintaining its style, we will be using `Google's MDL <https://getmdl.io/>`_. This will act as CSS to our website. Most basic websites have a navigation menu at the top and the content below. We will use this model. The navigation menu will contain:
 
 - home
 - sign up
 - sign in (and will auto move you to profile page)
 - sign out
+- profile
+
+To use Google's MDL, you add 2 CSS references in the **head** of your HTML code. MDL is based on `components <https://getmdl.io/components/index.html>`_. Components can be things like a button, or a navigation menu system, or a form. I will add these components to the HTML to create a better looking website.
 
 Tasks:
 
