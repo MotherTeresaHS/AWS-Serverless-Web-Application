@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+  	<!-- Javascript SDKs-->
+  	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  	<script src="js/amazon-cognito-auth.min.js"></script>
+  	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.596.0.min.js"></script> 
+  	<script src="js/amazon-cognito-identity.min.js"></script>   
+  	<script src="js/config.js"></script>
+  	<script type="text/javascript" src="js/sign-in.js"></script>
+  </head>
+  
+  <body>
+    <form>
+      <h1>Please sign in</h1>
+
+      <input type="text" id="inputUsername"  placeholder="Email address" name="username" required autofocus>
+      <input type="password" id="inputPassword"  placeholder="Password" name="password" required>    
+      <button type="button" onclick="signInButton();">Sign in</button>
+    </form>
+    
+    <br>
+    <div id='logged-in'>
+      <p></p>
+    </div>
+    
+    <p><a href="./profile.1.html">Profile</a></p>
+    
+    <br>
+    <div id='home'>
+      <p>
+        <a href='./index.html'>Home</a>
+      </p>
+    </div>
+    
+  </body>
+</html>
