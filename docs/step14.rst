@@ -70,21 +70,42 @@ JavaScript
 
 .. tabs::
 
+  .. group-tab:: Home
+
+    .. code-block:: javascript
+        :linenos:
+
+        // no javascript code
+
+  .. group-tab:: Products
+
+    .. code-block:: javascript
+        :linenos:
+
+        // no javascript code
+
   .. group-tab:: Sign In
 
-    .. literalinclude:: ./step14_code/sign-in.js
+    .. literalinclude:: ./step14_code/js/sign-in.js
       :language: javascript
       :linenos:
 
   .. group-tab:: Sign Out
 
-    .. literalinclude:: ./step14_code/sign-out.js
+    .. literalinclude:: ./step14_code/js/sign-out.js
       :language: javascript
       :linenos:
 
+  .. group-tab:: About
+
+    .. code-block:: javascript
+        :linenos:
+
+        // no javascript code
+
   .. group-tab:: Profile
 
-    .. literalinclude:: ./step14_code/profile.js
+    .. literalinclude:: ./step14_code/js/profile.js
       :language: javascript
       :linenos:
 
