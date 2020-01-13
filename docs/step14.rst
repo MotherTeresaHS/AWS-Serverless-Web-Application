@@ -70,18 +70,6 @@ JavaScript
 
 .. tabs::
 
-  .. group-tab:: Home
-
-    .. literalinclude:: 
-      :language: javascript
-      :linenos:
-
-  .. group-tab:: Products
-
-    .. literalinclude:: 
-      :language: javascript
-      :linenos:
-
   .. group-tab:: Sign In
 
     .. literalinclude:: ./step14_code/sign-in.js
@@ -91,12 +79,6 @@ JavaScript
   .. group-tab:: Sign Out
 
     .. literalinclude:: ./step14_code/sign-out.js
-      :language: javascript
-      :linenos:
-
-  .. group-tab:: About
-
-    .. literalinclude:: 
       :language: javascript
       :linenos:
 
