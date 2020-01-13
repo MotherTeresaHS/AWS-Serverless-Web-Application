@@ -29,46 +29,81 @@ HTML
 
 .. tabs::
 
-  .. group-tab:: index
+  .. group-tab:: Home
 
     .. literalinclude:: ./step14_code/index.html
       :language: html
-      :caption: index.html
       :linenos:
 
   .. group-tab:: Products
 
     .. literalinclude:: ./step14_code/products.html
       :language: html
-      :caption: products.html
       :linenos:
 
   .. group-tab:: Sign In
 
     .. literalinclude:: ./step14_code/sign-in.html
       :language: html
-      :caption: sign-in.html
       :linenos:
 
   .. group-tab:: Sign Out
 
     .. literalinclude:: ./step14_code/sign-out.html
       :language: html
-      :caption: sign-out.html
       :linenos:
 
   .. group-tab:: About
 
     .. literalinclude:: ./step14_code/about.html
       :language: html
-      :caption: about.html
       :linenos:
 
   .. group-tab:: Profile
 
     .. literalinclude:: ./step14_code/profile.html
       :language: html
-      :caption: profile.html
+      :linenos:
+
+JavaScript
+**********
+
+.. tabs::
+
+  .. group-tab:: Home
+
+    .. literalinclude:: ./step14_code/index.js
+      :language: javascript
+      :linenos:
+
+  .. group-tab:: Products
+
+    .. literalinclude:: ./step14_code/products.js
+      :language: javascript
+      :linenos:
+
+  .. group-tab:: Sign In
+
+    .. literalinclude:: ./step14_code/sign-in.js
+      :language: javascript
+      :linenos:
+
+  .. group-tab:: Sign Out
+
+    .. literalinclude:: ./step14_code/sign-out.js
+      :language: javascript
+      :linenos:
+
+  .. group-tab:: About
+
+    .. literalinclude:: ./step14_code/about.js
+      :language: javascript
+      :linenos:
+
+  .. group-tab:: Profile
+
+    .. literalinclude:: ./step14_code/profile.js
+      :language: javascript
       :linenos:
 
 
