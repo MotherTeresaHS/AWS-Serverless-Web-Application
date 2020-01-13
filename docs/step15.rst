@@ -86,13 +86,11 @@ Tasks:
         
             return return_var
             
-        except ClientError as e:
+        except:
            return {
                 'statusCode': 204,
-                'body': json.dumps(e.response['Error']['Message'])
-            
-
-
+                'body': json.dumps("error")
+            }
 
 .. raw:: html
 
