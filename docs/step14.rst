@@ -72,13 +72,13 @@ JavaScript
 
   .. group-tab:: Home
 
-    .. literalinclude:: ./step14_code/index.js
+    .. literalinclude:: 
       :language: javascript
       :linenos:
 
   .. group-tab:: Products
 
-    .. literalinclude:: ./step14_code/products.js
+    .. literalinclude:: 
       :language: javascript
       :linenos:
 
@@ -96,7 +96,7 @@ JavaScript
 
   .. group-tab:: About
 
-    .. literalinclude:: ./step14_code/about.js
+    .. literalinclude:: 
       :language: javascript
       :linenos:
 
