@@ -15,7 +15,7 @@ Here is the Lambda function code:
 
 .. code-block:: pyhton
   :linenos:
-  :caption: Get S3 image and retrun it as JSON
+  :caption: Get S3 image and return it as JSON
 
     import boto3
     import base64
