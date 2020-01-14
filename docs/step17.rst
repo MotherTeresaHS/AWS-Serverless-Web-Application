@@ -1,8 +1,8 @@
-.. _step16:
+.. _step17:
 
-***************
-Cognito Trigger
-***************
+***
+S3
+***
 
 .. image:: ./images/AWSServerlessWebApplication-S3.jpg
   :width: 720 px
