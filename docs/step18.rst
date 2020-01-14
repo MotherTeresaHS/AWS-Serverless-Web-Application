@@ -17,42 +17,42 @@ Here is the Lambda function code:
   :linenos:
   :caption: Get S3 image and return it as JSON
 
-    import boto3
-    import base64
-    from boto3 import client
+  import boto3
+  import base64
+  from boto3 import client
 
-    def lambda_handler(event, context):
-        # got this function from: https://stackoverflow.com/questions/36240356/lambda-get-image-from-s3
-        profile_image_key = event['email_address']
-        user_download_img = profile_image_key + '.jpg'
+  def lambda_handler(event, context):
+      # got this function from: https://stackoverflow.com/questions/36240356/lambda-get-image-from-s3
+      profile_image_key = event['email_address']
+      user_download_img = profile_image_key + '.jpg'
 
-        s3 = boto3.resource('s3')
-        bucket = s3.Bucket(u'coxall-profile-photo') 
-        obj = bucket.Object(key = user_download_img)      #pass your image Name to key
-        response = obj.get()     #get Response
-        img = response[u'Body'].read()        # Read the respone, you can also print it.
-        #print(type(img))                      # Just getting type.
-        myObj = [base64.b64encode(img)]          # Encoded the image to base64
-        #print(type(myObj))            # Printing the values
-        #print(myObj[0])               # get the base64 format of the image
-        #print('type(myObj[0]) ================>',type(myObj[0]))
-        return_json = str(myObj[0])           # Assing to return_json variable to return.  
-        #print('return_json ========================>',return_json)
-        return_json = return_json.replace("b'","")          # replace this 'b'' is must to get absoulate image.
-        encoded_image = return_json.replace("'","")   
+      s3 = boto3.resource('s3')
+      bucket = s3.Bucket(u'coxall-profile-photo') 
+      obj = bucket.Object(key = user_download_img)      #pass your image Name to key
+      response = obj.get()     #get Response
+      img = response[u'Body'].read()        # Read the respone, you can also print it.
+      #print(type(img))                      # Just getting type.
+      myObj = [base64.b64encode(img)]          # Encoded the image to base64
+      #print(type(myObj))            # Printing the values
+      #print(myObj[0])               # get the base64 format of the image
+      #print('type(myObj[0]) ================>',type(myObj[0]))
+      return_json = str(myObj[0])           # Assing to return_json variable to return.  
+      #print('return_json ========================>',return_json)
+      return_json = return_json.replace("b'","")          # replace this 'b'' is must to get absoulate image.
+      encoded_image = return_json.replace("'","")   
 
-        return {
-            'status': 'True',
-            'statusCode': 200,
-            'message': 'Downloaded profile image',
-            'encoded_image':encoded_image          # returning base64 of your image which in s3 bucket.
-        }
-    # to prove that this is returning the image goto this website 
-    # https://codebeautify.org/base64-to-image-converter
-    # place the "encoded_image" into "Enter Base64 String"
-    # when doing so, ensure you do not include the quotes
-    # you should get back your image 
-    # :)
+      return {
+          'status': 'True',
+          'statusCode': 200,
+          'message': 'Downloaded profile image',
+          'encoded_image':encoded_image          # returning base64 of your image which in s3 bucket.
+      }
+  # to prove that this is returning the image goto this website 
+  # https://codebeautify.org/base64-to-image-converter
+  # place the "encoded_image" into "Enter Base64 String"
+  # when doing so, ensure you do not include the quotes
+  # you should get back your image 
+  # :)
 
 Use this URL (https://codebeautify.org/base64-to-image-converter) to prove that what you are getting back from the Lambda function really is the image.
 

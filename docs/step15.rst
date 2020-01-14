@@ -51,44 +51,44 @@ Tasks:
   :linenos:
   :caption: Lambda function to create row in DynamoDB
 
-    #!/usr/bin/env python3
+  #!/usr/bin/env python3
 
-    # Created by: Mr. Coxall
-    # Created on: Dec 2019
-    # This function adds a row from our chocolate_user DynmamoDB
+  # Created by: Mr. Coxall
+  # Created on: Dec 2019
+  # This function adds a row from our chocolate_user DynmamoDB
 
-    import json
-    import boto3
+  import json
+  import boto3
 
 
-    def lambda_handler(event, context):
-        # function returns a row from our chocolate_user DynmamoDB
-        
-        dynamodb = boto3.resource('dynamodb')
-        table = dynamodb.Table('chocolate_user')
-        
-        try:
-            response = table.put_item(
-                Item = {
-                    'email': event['request']['userAttributes']['email']
-                }
-            )
-            
-            try:
-                result = response['ResponseMetadata']
-            except:
-                result = {}
-            
-            print(result)
-            return_var = json.dumps(result)
-        
-            print(result)
-            
-            # Cognito is expecting the "event" object to be returned for success
-            return event
-            
-        except:
-           return "error"
+  def lambda_handler(event, context):
+      # function returns a row from our chocolate_user DynmamoDB
+      
+      dynamodb = boto3.resource('dynamodb')
+      table = dynamodb.Table('chocolate_user')
+      
+      try:
+          response = table.put_item(
+              Item = {
+                  'email': event['request']['userAttributes']['email']
+              }
+          )
+          
+          try:
+              result = response['ResponseMetadata']
+          except:
+              result = {}
+          
+          print(result)
+          return_var = json.dumps(result)
+      
+          print(result)
+          
+          # Cognito is expecting the "event" object to be returned for success
+          return event
+          
+      except:
+         return "error"
 
 
 .. raw:: html
