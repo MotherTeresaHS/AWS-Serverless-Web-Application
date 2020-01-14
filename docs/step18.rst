@@ -9,7 +9,7 @@ Get Image from Lambda
   :alt: AWS Serverless Web App
   :align: center
 
-Now that we have our image in S3, we need to be able to get it out using Lambda. To do that create a new Lambda function called **get_profile_image**. One problem we have is that we have to pass the image eventually to API Gateway as a JSON file. We can not pass it as a *.jpg file. To do this we will access the image, convert it to **base64** and then pass it out of our function as a JSON file. Our JavaScript function on our web front end will then un-encode it and present it back as an image. 
+Now that we have our image in S3, we need to be able to get it out using Lambda. To do that create a new Lambda function called **get_profile_image**. One problem we have is that we have to pass the image eventually to API Gateway as a JSON file. We can not pass it as a ".jpg" file. To do this we will access the image, convert it to **base64** and then pass it out of our function as a JSON file. Our JavaScript function on our web front end will then un-encode it and present it back as an image. 
 
 Here is the Lambda function code:
 
