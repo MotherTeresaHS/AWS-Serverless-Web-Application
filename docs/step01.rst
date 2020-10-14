@@ -26,7 +26,7 @@ Tasks:
 	vocstartsoft:~/environment $ git init
 	Initialized empty Git repository in /home/ubuntu/environment/.git/
 	vocstartsoft:~/environment (master) $ git remote add origin https://github.com/Mr-Coxall/Amplify-Test
-	vocstartsoft:~/environment (master) $ git pull origin master
+	vocstartsoft:~/environment (master) $ git pull origin main
 
 .. code-block:: html
 	:linenos:
