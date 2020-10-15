@@ -15,6 +15,8 @@ Tasks:
 
 - create GitHub repo
 - create Cloud9 instance
+- initialize git repo in Cloud9
+- then change the default branch from "master" to "main" (since we no longer use the terminology master for repos)
 - connect the root of Cloud9 instance to GitHub repo
 - create ``index.html`` file in the root of Cloud9
 - update GitHub repo
@@ -25,6 +27,7 @@ Tasks:
 
 	vocstartsoft:~/environment $ git init
 	Initialized empty Git repository in /home/ubuntu/environment/.git/
+	vocstartsoft:~/environment (master) $ git checkout -b main
 	vocstartsoft:~/environment (master) $ git remote add origin https://github.com/Mr-Coxall/Amplify-Test
 	vocstartsoft:~/environment (master) $ git pull origin main
 
