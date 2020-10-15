@@ -20,7 +20,8 @@ Tasks:
 - connect the root of Cloud9 instance to GitHub repo
 - create ``index.html`` file in the root of Cloud9
 - update GitHub repo
-- create Amplify instance connected to GitHub repo 
+- create Amplify instance connected to GitHub repo
+- ensure you select the "main" branch and not the "master" one we will not be using
 
 .. code-block:: shell
 	:caption: How to connect Cloud9 instance root to GitHub repo
