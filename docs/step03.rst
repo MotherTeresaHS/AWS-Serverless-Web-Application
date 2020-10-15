@@ -16,6 +16,7 @@ Tasks:
 - create a Lambda function that returns "Hello, World!"
 - we need to ensure we use the "role" we just created previously
 - we also need to create "test cases" for it to use as input when we test the function to ensure it is running correctly
+- to save our changes to see if the test cases will run correctly, you need to click "Deploy"
 
 .. code-block:: python
 	:linenos:
