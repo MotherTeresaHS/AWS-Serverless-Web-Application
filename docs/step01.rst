@@ -14,7 +14,7 @@ We will use AWS Amplify to host our web app so it is always available and we do 
 Tasks:
 
 - create GitHub repo
-- create Cloud9 instance
+- create Cloud9 instance, remember to delete the README.md file from CLoud9 since the GitRepo has one and you do not want any conflicts
 - initialize git repo in Cloud9
 - then change the default branch from "master" to "main" (since we no longer use the terminology master for repos)
 - connect the root of Cloud9 instance to GitHub repo
