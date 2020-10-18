@@ -57,12 +57,12 @@ Sign In Code
               <p></p>
             </div>
             
-            <p><a href="./profile.1.html">Profile</a></p>
+            <p><a href="./profile.html">Profile</a></p>
             
             <br>
             <div id='home'>
               <p>
-                <a href='./index.1.html'>Home</a>
+                <a href='./index.html'>Home</a>
               </p>
             </div>
             
@@ -122,7 +122,7 @@ Sign In Code
                         document.getElementById("logged-in").innerHTML = "You are logged in as: " + result[2].getValue();
                         
                         // now auto redirect to profile page
-                        window.location.replace("./profile.1.html");
+                        window.location.replace("./profile.html");
                     });
               
             },
@@ -165,7 +165,7 @@ Sign Out Code
             <br>
             <div id='home'>
               <p>
-                <a href='./index.1.html'>Home</a>
+                <a href='./index.html'>Home</a>
               </p>
             </div>
           </body>
@@ -250,7 +250,7 @@ Profile Code
             <br>
             <div id='home'>
               <p>
-                <a href='./index.1.html'>Home</a>
+                <a href='./index.html'>Home</a>
               </p>
             </div>
           </body>
